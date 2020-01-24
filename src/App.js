@@ -29,12 +29,16 @@ const Wrapper = styled.div`
   align-items: center;
   #quote-box {
     background: white;
-    max-width: 75%;
+    width: 60rem;
     padding: 2rem;
     border-radius: 5px;
     box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24),
       0 17px 50px 0 rgba(0, 0, 0, 0.19);
     color: ${props => props.color};
+    @media only screen and (max-width: 75em) {
+      width: 75%;
+      min-width: 300px;
+    }
     .actions {
       display: flex;
       justify-content: space-between;
